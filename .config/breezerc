@@ -1,0 +1,18 @@
+[Common]
+ShadowColor=24,24,24
+ShadowSize=ShadowMedium
+ShadowStrength=204
+
+[Style]
+MenuOpacity=60
+
+[Windeco]
+DrawBackgroundGradient=true
+
+[Windeco Exception 0]
+BorderSize=0
+Enabled=true
+ExceptionPattern=.*
+ExceptionType=0
+HideTitleBar=true
+Mask=16

@@ -1,0 +1,20 @@
+[Desktop Entry]
+Name=Translator
+Comment=Simple wrap of translate-shell package
+
+Type=Service
+Icon=globe
+X-KDE-ServiceTypes=Plasma/Applet
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+X-Plasma-Provides=org.kde.plasma.translator
+
+X-KDE-PluginInfo-Author=Driglu4it
+X-KDE-PluginInfo-Email=dr@i-glu4it.ru
+X-KDE-PluginInfo-Name=org.kde.plasma.translator
+X-KDE-PluginInfo-Version=0.8
+X-KDE-PluginInfo-Category=System
+X-KDE-PluginInfo-Depends=translate-shell
+X-KDE-PluginInfo-License=MIT
+X-KDE-PluginInfo-EnabledByDefault=true

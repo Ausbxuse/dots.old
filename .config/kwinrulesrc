@@ -1,0 +1,13 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[1]
+Description=No Border
+noborderrule=3
+wmclass=.*
+wmclasscomplete=true
+wmclassmatch=3
+
+[General]
+count=1
+rules=1
