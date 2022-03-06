@@ -30,7 +30,7 @@ PreloadWeight=0
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=353
 ToolBoxButtonY=38
-positions=2,11,desktop:/FRC VS Code 2022.desktop,0,0,desktop:/brave-picebhhlijnlefeleilfbanaghjlkkna-Default.desktop,1,0
+positions=2,11,desktop:/brave-picebhhlijnlefeleilfbanaghjlkkna-Default.desktop,1,0,desktop:/FRC VS Code 2022.desktop,0,0
 sortMode=-1
 
 [Containments][1][Wallpaper][com.darkeye.animatedImage][General]
@@ -42,7 +42,7 @@ Image=file:///home/peter/.local/share/wallpapers/0026.jpg
 SlidePaths=/home/peter/.local/share/wallpapers,/usr/share/wallpapers
 
 [Containments][1][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/peter/.local/share/wallpapers/0235.jpg
+Image=file:///usr/share/wallpapers/SafeLanding/contents/images/5120x2880.jpg
 SlidePaths=/home/peter/.local/share/wallpapers,/usr/share/wallpapers
 UncheckedSlides=file:///home/peter/.local/share/wallpapers/forest.jpg,file:///usr/share/wallpapers/Flow/contents/images/5120x2880.jpg,file:///usr/share/wallpapers/Grey/contents/images/1920x1080.jpg,file:///usr/share/wallpapers/MilkyWay/contents/images/5120x2880.png,file:///usr/share/wallpapers/Kokkini/contents/images/3840x2160.png,file:///usr/share/wallpapers/Opal/contents/images/3840x2160.png,file:///usr/share/wallpapers/Cluster/contents/images/3840x2160.png,file:///usr/share/wallpapers/ColorfulCups/contents/images/2560x1600.jpg,file:///usr/share/wallpapers/Elarun/contents/images/2560x1600.png,file:///home/peter/.local/share/wallpapers/Sweet-Wallpapers/source.svg,file:///home/peter/.local/share/wallpapers/Sweet-Wallpapers/Sweet-S1.png,file:///home/peter/.local/share/wallpapers/hMhDXw-Layan/Layan/contents/images/2560x1440.png,file:///home/peter/.local/share/wallpapers/Sweet-Wallpapers/Sweet-S2.png,file:///home/peter/.local/share/wallpapers/Sweet-Wallpapers/Sweet-S3.png,file:///home/peter/.local/share/wallpapers/Sweet-Wallpapers/Sweet-S4.png,file:///home/peter/.local/share/wallpapers/Sweet-Wallpapers/Sweet-S5.png,file:///usr/share/wallpapers/BytheWater/contents/images/1920x1080.jpg,file:///home/peter/.local/share/wallpapers/Starry Nebula 219.png,file:///usr/share/wallpapers/summer_1am/contents/images/1920x1080.jpg,file:///usr/share/wallpapers/Volna/contents/images/5120x2880.jpg,file:///usr/share/wallpapers/FlyingKonqui/contents/images/1920x1080.png,file:///home/peter/.local/share/wallpapers/hMhDXw-Layan/Layan-light/contents/images/2560x1440.png,file:///usr/share/wallpapers/Canopee/contents/images/3840x2160.png,file:///usr/share/wallpapers/Cascade/contents/images/3840x2160.png,file:///usr/share/wallpapers/Next/contents/images/1920x1080.png
 
@@ -179,7 +179,7 @@ customDateFormat=ddd MMM d
 dateDisplayFormat=BesideTime
 dateFormat=custom
 enabledCalendarPlugins=/usr/lib/qt/plugins/plasmacalendarplugins/holidaysevents.so,/usr/lib/qt/plugins/plasmacalendarplugins/astronomicalevents.so
-fontFamily=Material
+fontFamily=Noto Sans Multani
 showSeconds=true
 showWeekNumbers=true
 use24hFormat=2
@@ -240,7 +240,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][8][Applets][11][Configuration]
-PreloadWeight=5
+PreloadWeight=10
 
 [Containments][8][Applets][11][Configuration][ConfigDialog]
 DialogHeight=840
@@ -351,7 +351,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][8][Applets][23][Configuration]
-PreloadWeight=56
+PreloadWeight=61
 
 [Containments][8][Applets][83][Configuration]
 PreloadWeight=42
@@ -378,7 +378,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][8][Applets][90][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][8][Applets][91]
 immutability=1
