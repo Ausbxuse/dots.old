@@ -11,7 +11,6 @@ lastUpdate=2021,9,19,12,12,45.106
 [Containments][1]
 ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
-activityId=43b55e82-c8d4-49ed-ae47-a8f3c36b679c
 formfactor=0
 immutability=1
 lastScreen=0
@@ -44,7 +43,6 @@ SlidePaths=/home/peter/.local/share/wallpapers,/usr/share/wallpapers
 [Containments][1][Wallpaper][org.kde.slideshow][General]
 Image=file:///usr/share/wallpapers/SafeLanding/contents/images/5120x2880.jpg
 SlidePaths=/home/peter/.local/share/wallpapers,/usr/share/wallpapers
-UncheckedSlides=file:///home/peter/.local/share/wallpapers/forest.jpg,file:///usr/share/wallpapers/Flow/contents/images/5120x2880.jpg,file:///usr/share/wallpapers/Grey/contents/images/1920x1080.jpg,file:///usr/share/wallpapers/MilkyWay/contents/images/5120x2880.png,file:///usr/share/wallpapers/Kokkini/contents/images/3840x2160.png,file:///usr/share/wallpapers/Opal/contents/images/3840x2160.png,file:///usr/share/wallpapers/Cluster/contents/images/3840x2160.png,file:///usr/share/wallpapers/ColorfulCups/contents/images/2560x1600.jpg,file:///usr/share/wallpapers/Elarun/contents/images/2560x1600.png,file:///home/peter/.local/share/wallpapers/Sweet-Wallpapers/source.svg,file:///home/peter/.local/share/wallpapers/Sweet-Wallpapers/Sweet-S1.png,file:///home/peter/.local/share/wallpapers/hMhDXw-Layan/Layan/contents/images/2560x1440.png,file:///home/peter/.local/share/wallpapers/Sweet-Wallpapers/Sweet-S2.png,file:///home/peter/.local/share/wallpapers/Sweet-Wallpapers/Sweet-S3.png,file:///home/peter/.local/share/wallpapers/Sweet-Wallpapers/Sweet-S4.png,file:///home/peter/.local/share/wallpapers/Sweet-Wallpapers/Sweet-S5.png,file:///usr/share/wallpapers/BytheWater/contents/images/1920x1080.jpg,file:///home/peter/.local/share/wallpapers/Starry Nebula 219.png,file:///usr/share/wallpapers/summer_1am/contents/images/1920x1080.jpg,file:///usr/share/wallpapers/Volna/contents/images/5120x2880.jpg,file:///usr/share/wallpapers/FlyingKonqui/contents/images/1920x1080.png,file:///home/peter/.local/share/wallpapers/hMhDXw-Layan/Layan-light/contents/images/2560x1440.png,file:///usr/share/wallpapers/Canopee/contents/images/3840x2160.png,file:///usr/share/wallpapers/Cascade/contents/images/3840x2160.png,file:///usr/share/wallpapers/Next/contents/images/1920x1080.png
 
 [Containments][2]
 activityId=
@@ -296,7 +294,6 @@ DialogHeight=868
 DialogWidth=1120
 
 [Containments][8][Applets][153][Configuration][General]
-lastReloadedMsJson={"cache_5a5440a6c6026f3e61c6aee598cae8dc":1635976190325,"cache_bd766d65c3cdaa5c758846ae894a8422":1635976199306}
 placeIndex=1
 places=[{"providerId":"yrno","placeIdentifier":"værvarsel/daglig-tabell/2-5374361/USA/California/Monterey","placeAlias":"Monterey"},{"providerId":"yrno","placeIdentifier":"værvarsel/daglig-tabell/2-1791247/Kina/Hubei/Wuhan Shi","placeAlias":"Wuhan"}]
 

@@ -8,11 +8,6 @@ OpenGLIsUnsafe=false
 WindowsBlockCompositing=false
 
 [Desktops]
-Id_1=5f484260-7417-4de9-8e80-50adfeb54d00
-Id_2=d69bc836-faf9-4c24-b781-ff25dd6d7bc6
-Id_3=8b720ee6-9993-4b5b-ae97-d1638b9895e0
-Id_4=3af52d04-80f3-4d00-96c2-d7089033448a
-Id_5=e6e7b84c-5258-435b-9ae8-38e035fbc61e
 Number=5
 Rows=1
 
@@ -77,7 +72,7 @@ wobblywindowsEnabled=true
 
 [Script-forceblur]
 blurContent=true
-patterns=yakuake\nurxvt\nkeepassxc\nAlacritty\nEmacs
+patterns=urxvt\nkeepassxc\nAlacritty
 
 [Script-krohnkite]
 directionalKeyDwm=false

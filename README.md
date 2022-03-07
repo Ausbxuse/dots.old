@@ -2,11 +2,4 @@
 
 This repo contains all the essential configuration file for my GNU/Linux desktop
 
-Change all occurences to another
-
-# TODOs
-- [ ] use a script to write kde configs
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+Change all occurences of 'peter' to your own user name

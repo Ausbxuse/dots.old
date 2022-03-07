@@ -159,23 +159,6 @@ Type=SIMPLE_ACTION_DATA
 [Data_1_1Actions]
 ActionsCount=1
 
-[Data_1_1Actions0]
-CommandURL=http://google.com
-Type=COMMAND_URL
-
-[Data_1_1Conditions]
-Comment=
-ConditionsCount=0
-
-[Data_1_1Triggers]
-Comment=Simple_action
-TriggersCount=1
-
-[Data_1_1Triggers0]
-Key=
-Type=SHORTCUT
-Uuid={d03619b6-9b3c-48cc-9d9c-a2aadb485550}
-
 [Data_1_2]
 Comment=Global keyboard shortcut to launch Konsole
 Enabled=true
@@ -196,11 +179,6 @@ ConditionsCount=0
 [Data_1_2Triggers]
 Comment=Simple_action
 TriggersCount=1
-
-[Data_1_2Triggers0]
-Key=
-Type=SHORTCUT
-Uuid={e143c7ed-fd9f-4234-b941-0cc338fd00eb}
 
 [Data_2]
 Comment=This group contains various examples demonstrating most of the features of KHotkeys. (Note that this group and all its actions are disabled by default.)
@@ -250,11 +228,6 @@ ConditionsCount=0
 Comment=Simple_action
 TriggersCount=1
 
-[Data_2_1Triggers0]
-Key=Ctrl+Alt+I
-Type=SHORTCUT
-Uuid={763eba6d-9dac-4540-aaa8-3914ca310979}
-
 [Data_2_2]
 Comment=After pressing Alt+Ctrl+H the input of 'Hello' will be simulated, as if you typed it.  This is especially useful if you have call to frequently type a word (for instance, 'unsigned').  Every keypress in the input is separated by a colon ':'. Note that the keypresses literally mean keypresses, so you have to write what you would press on the keyboard. In the table below, the left column shows the input and the right column shows what to type.\n\n"enter" (i.e. new line)                Enter or Return\na (i.e. small a)                          A\nA (i.e. capital a)                       Shift+A\n: (colon)                                  Shift+;\n' '  (space)                              Space
 Enabled=false
@@ -277,11 +250,6 @@ ConditionsCount=0
 Comment=Simple_action
 TriggersCount=1
 
-[Data_2_2Triggers0]
-Key=Ctrl+Alt+H
-Type=SHORTCUT
-Uuid={e2c05f93-e0e1-4dd8-8177-e8f7fb5dd103}
-
 [Data_2_3]
 Comment=This action runs Konsole, after pressing Ctrl+Alt+T.
 Enabled=false
@@ -302,11 +270,6 @@ ConditionsCount=0
 [Data_2_3Triggers]
 Comment=Simple_action
 TriggersCount=1
-
-[Data_2_3Triggers0]
-Key=Ctrl+Alt+T
-Type=SHORTCUT
-Uuid={dbf54b69-db44-4850-882b-d86757b02f4d}
 
 [Data_2_4]
 Comment=Read the comment on the "Type 'Hello'" action first.\n\nQt Designer uses Ctrl+F4 for closing windows.  In KDE, however, Ctrl+F4 is the shortcut for going to virtual desktop 4, so this shortcut does not work in Qt Designer.  Further, Qt Designer does not use KDE's standard Ctrl+W for closing the window.\n\nThis problem can be solved by remapping Ctrl+W to Ctrl+F4 when the active window is Qt Designer. When Qt Designer is active, every time Ctrl+W is pressed, Ctrl+F4 will be sent to Qt Designer instead. In other applications, the effect of Ctrl+W is unchanged.\n\nWe now need to specify three things: A new shortcut trigger on 'Ctrl+W', a new keyboard input action sending Ctrl+F4, and a new condition that the active window is Qt Designer.\nQt Designer seems to always have title 'Qt Designer by Trolltech', so the condition will check for the active window having that title.
@@ -348,11 +311,6 @@ WindowTypes=33
 Comment=
 TriggersCount=1
 
-[Data_2_4Triggers0]
-Key=Ctrl+W
-Type=SHORTCUT
-Uuid={cfd003e9-4fe7-4fa7-9a93-bee727187bdf}
-
 [Data_2_5]
 Comment=By pressing Alt+Ctrl+W a D-Bus call will be performed that will show the minicli. You can use any kind of D-Bus call, just like using the command line 'qdbus' tool.
 Enabled=false
@@ -376,11 +334,6 @@ ConditionsCount=0
 [Data_2_5Triggers]
 Comment=Simple_action
 TriggersCount=1
-
-[Data_2_5Triggers0]
-Key=Ctrl+Alt+W
-Type=SHORTCUT
-Uuid={0ecfbbfc-5db1-41a8-9074-1518d6e52f4d}
 
 [Data_2_6]
 Comment=Read the comment on the "Type 'Hello'" action first.\n\nJust like the "Type 'Hello'" action, this one simulates keyboard input, specifically, after pressing Ctrl+Alt+B, it sends B to XMMS (B in XMMS jumps to the next song). The 'Send to specific window' checkbox is checked and a window with its class containing 'XMMS_Player' is specified; this will make the input always be sent to this window. This way, you can control XMMS even if, for instance, it is on a different virtual desktop.\n\n(Run 'xprop' and click on the XMMS window and search for WM_CLASS to see 'XMMS_Player').
@@ -418,11 +371,6 @@ ConditionsCount=0
 [Data_2_6Triggers]
 Comment=Simple_action
 TriggersCount=1
-
-[Data_2_6Triggers0]
-Key=Ctrl+Alt+B
-Type=SHORTCUT
-Uuid={83f72abb-e8d1-4f8c-b531-ec42d78ee58e}
 
 [Data_2_7]
 Comment=Konqueror in KDE3.1 has tabs, and now you can also have gestures.\n\nJust press the middle mouse button and start drawing one of the gestures, and after you are finished, release the mouse button. If you only need to paste the selection, it still works, just click the middle mouse button. (You can change the mouse button to use in the global settings).\n\nRight now, there are the following gestures available:\nmove right and back left - Forward (Alt+Right)\nmove left and back right - Back (Alt+Left)\nmove up and back down  - Up (Alt+Up)\ncircle counterclockwise - Reload (F5)\n\nThe gesture shapes can be entered by performing them in the configuration dialog. You can also look at your numeric pad to help you: gestures are recognized like a 3x3 grid of fields, numbered 1 to 9.\n\nNote that you must perform exactly the gesture to trigger the action. Because of this, it is possible to enter more gestures for the action. You should try to avoid complicated gestures where you change the direction of mouse movement more than once.  For instance, 45654 or 74123 are simple to perform, but 1236987 may be already quite difficult.\n\nThe conditions for all gestures are defined in this group. All these gestures are active only if the active window is Konqueror (class contains 'konqueror').
@@ -610,11 +558,6 @@ ConditionsCount=0
 [Data_2_8Triggers]
 Comment=Simple_action
 TriggersCount=1
-
-[Data_2_8Triggers0]
-Key=Meta+E
-Type=SHORTCUT
-Uuid={b1c86258-aa73-4bbc-a9c2-08a326462f43}
 
 [Data_3]
 Comment=Basic Konqueror gestures.

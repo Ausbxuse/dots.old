@@ -410,7 +410,3 @@ kcm-lookandfeel=none,none,Global Theme
 kcm-users=none,none,Users
 powerdevilprofilesconfig=none,none,Energy Saving
 screenlocker=none,none,Screen Locking
-
-[yakuake]
-_k_friendly_name=Yakuake
-toggle-window-state=F12,F12,Open/Retract Yakuake
