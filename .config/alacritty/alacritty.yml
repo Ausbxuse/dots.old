@@ -215,8 +215,10 @@ colors:
     #green: "#8be00e"
     green: "#aae95b"
     yellow: "#ffb900"
-    blue: "#61aeee"
-    magenta: "#bd93f9"
+    # blue: "#61aeee"
+    blue: "#57c7ff"
+    # magenta: "#bd93f9"
+    magenta: "#ff6ac1"
     cyan: "#00d7ea"
     white: "#ffffff"
   bright:
