@@ -8,9 +8,10 @@ RightButton;NoModifier=org.kde.contextmenu
 [AppletGlobals][org.kde.plasma.comic]
 lastUpdate=2021,9,19,12,12,45.106
 
-[Containments][1]
+[Containments][162]
 ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
+activityId=89779437-91b7-4088-a17f-a19bde375286
 formfactor=0
 immutability=1
 lastScreen=0
@@ -18,30 +19,20 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.slideshow
 
-[Containments][1][ConfigDialog]
-DialogHeight=931
-DialogWidth=1920
+[Containments][162][ConfigDialog]
+DialogHeight=840
+DialogWidth=1120
 
-[Containments][1][Configuration]
-PreloadWeight=0
-
-[Containments][1][General]
+[Containments][162][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=353
-ToolBoxButtonY=38
-positions=2,11,desktop:/brave-picebhhlijnlefeleilfbanaghjlkkna-Default.desktop,1,0,desktop:/FRC VS Code 2022.desktop,0,0
-sortMode=-1
+ToolBoxButtonY=34
 
-[Containments][1][Wallpaper][com.darkeye.animatedImage][General]
-FillMode=2
-Image=file:///home/peter/.local/share/wallpapers/geometry.jpg
+[Containments][162][Wallpaper][org.kde.image][General]
+Image=file:///home/peter/.local/share/wallpapers/WhiteSur/contents/images/1920x1080.png
 
-[Containments][1][Wallpaper][org.kde.image][General]
-Image=file:///home/peter/.local/share/wallpapers/0026.jpg
-SlidePaths=/home/peter/.local/share/wallpapers,/usr/share/wallpapers
-
-[Containments][1][Wallpaper][org.kde.slideshow][General]
-Image=file:///usr/share/wallpapers/SafeLanding/contents/images/5120x2880.jpg
+[Containments][162][Wallpaper][org.kde.slideshow][General]
+Image=file:///usr/share/wallpapers/BytheWater/contents/images/1920x1080.jpg
 SlidePaths=/home/peter/.local/share/wallpapers,/usr/share/wallpapers
 
 [Containments][2]
@@ -165,6 +156,10 @@ plugin=org.kde.plasma.panelspacer
 [Containments][2][Applets][161][Configuration][General]
 length=195
 
+[Containments][2][Applets][163]
+immutability=1
+plugin=org.kde.milou
+
 [Containments][2][Applets][18]
 immutability=1
 plugin=org.kde.plasma.digitalclock
@@ -215,7 +210,7 @@ DialogWidth=1920
 PreloadWeight=0
 
 [Containments][2][General]
-AppletOrder=154;122;127;82;160;161;128;103;7;18
+AppletOrder=154;122;127;82;160;161;128;103;7;18;163
 
 [Containments][8]
 activityId=
@@ -348,7 +343,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][8][Applets][23][Configuration]
-PreloadWeight=61
+PreloadWeight=66
 
 [Containments][8][Applets][83][Configuration]
 PreloadWeight=42
@@ -365,7 +360,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][8][Applets][89][Configuration]
-PreloadWeight=0
+PreloadWeight=10
 
 [Containments][8][Applets][9][Configuration]
 PreloadWeight=42
