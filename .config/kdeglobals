@@ -1,3 +1,6 @@
+[$Version]
+update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,style_widgetstyle_default_breeze.upd:StyleWidgetStyleDefaultBreeze,kwin.upd:animation-speed
+
 [ColorEffects:Disabled]
 ChangeSelectionColor=
 Color=56,56,56
@@ -132,8 +135,13 @@ ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=120,120,120
 
+[DirSelect Dialog]
+DirSelectDialog Size=829,580
+
 [General]
 BrowserApplication=brave-browser.desktop
+ColorScheme=WhiteSurDark
+ColorSchemeHash=79296561e8832ef612d7c1138272b1e03e6ba66d
 Name=Layan
 XftHintStyle=hintslight
 XftSubPixel=rgb
@@ -146,7 +154,7 @@ toolBarFont=Noto Sans,10,-1,5,50,0,0,0,0,0
 widgetStyle=Breeze
 
 [Icons]
-Theme=Tela-circle-dark
+Theme=WhiteSur-dark
 
 [KDE]
 AnimationDurationFactor=0

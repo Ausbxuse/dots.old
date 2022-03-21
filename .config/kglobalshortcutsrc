@@ -1,6 +1,7 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
 switch-to-activity-43b55e82-c8d4-49ed-ae47-a8f3c36b679c=none,none,Switch to activity "Default"
+switch-to-activity-89779437-91b7-4088-a17f-a19bde375286=none,none,Switch to activity "Default"
 
 [Alacritty.desktop]
 New=none,none,New Terminal
@@ -32,11 +33,6 @@ _k_friendly_name=Touchpad
 Show System Activity=Ctrl+Esc,Ctrl+Esc,Show System Activity
 _k_friendly_name=KDE Daemon
 display=Display,Display\tMeta+P,Switch Display
-
-[khotkeys]
-_k_friendly_name=Custom Shortcuts Service
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
-{e143c7ed-fd9f-4234-b941-0cc338fd00eb}=none,none,Launch Konsole
 
 [kmix]
 _k_friendly_name=Audio Volume

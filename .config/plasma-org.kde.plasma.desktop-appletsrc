@@ -32,7 +32,7 @@ ToolBoxButtonY=34
 Image=file:///home/peter/.local/share/wallpapers/WhiteSur/contents/images/1920x1080.png
 
 [Containments][162][Wallpaper][org.kde.slideshow][General]
-Image=file:///usr/share/wallpapers/BytheWater/contents/images/1920x1080.jpg
+Image=file:///home/peter/.local/share/wallpapers/0225.jpg
 SlidePaths=/home/peter/.local/share/wallpapers,/usr/share/wallpapers
 
 [Containments][2]
@@ -136,7 +136,6 @@ DialogWidth=1120
 [Containments][2][Applets][154][Configuration][General]
 customButtonImage=archlinux
 favoritesPortedToKAstats=true
-useCustomButtonImage=true
 
 [Containments][2][Applets][160]
 immutability=1
@@ -239,6 +238,9 @@ PreloadWeight=10
 DialogHeight=840
 DialogWidth=1120
 
+[Containments][8][Applets][11][Configuration][General]
+globalMute=true
+
 [Containments][8][Applets][12]
 immutability=1
 plugin=org.kde.plasma.nightcolorcontrol
@@ -265,7 +267,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][8][Applets][14][Configuration]
-PreloadWeight=0
+PreloadWeight=10
 
 [Containments][8][Applets][15]
 immutability=1
@@ -343,7 +345,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][8][Applets][23][Configuration]
-PreloadWeight=66
+PreloadWeight=100
 
 [Containments][8][Applets][83][Configuration]
 PreloadWeight=42
@@ -360,7 +362,11 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][8][Applets][89][Configuration]
-PreloadWeight=10
+PreloadWeight=25
+
+[Containments][8][Applets][89][Configuration][General]
+allDevices=true
+removableDevices=false
 
 [Containments][8][Applets][9][Configuration]
 PreloadWeight=42
@@ -370,14 +376,14 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][8][Applets][90][Configuration]
-PreloadWeight=5
+PreloadWeight=20
 
 [Containments][8][Applets][91]
 immutability=1
 plugin=touchpad
 
 [Containments][8][Applets][91][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][8][Applets][91][Configuration][ConfigDialog]
 DialogHeight=868
@@ -414,4 +420,4 @@ useCustomButtonImage=true
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/FRC VS Code 2022.desktop,0,desktop:/brave-picebhhlijnlefeleilfbanaghjlkkna-Default.desktop,0
+screenMapping=desktop:/brave-picebhhlijnlefeleilfbanaghjlkkna-Default.desktop,0,desktop:/FRC VS Code 2022.desktop,0

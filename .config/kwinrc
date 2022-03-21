@@ -8,6 +8,11 @@ OpenGLIsUnsafe=false
 WindowsBlockCompositing=false
 
 [Desktops]
+Id_1=9087d64c-c9a1-4ebc-b4cc-80b85e54810e
+Id_2=386e2299-50df-4869-81fe-e71f45145e42
+Id_3=09e6cf82-12a5-4368-8541-1877f8978a0e
+Id_4=35eeae1b-1c71-4c99-a78e-5c23c5dc3276
+Id_5=0baf64c1-0e93-4ea5-8439-328043f9c197
 Number=5
 Rows=1
 

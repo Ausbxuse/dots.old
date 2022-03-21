@@ -161,12 +161,5 @@ ex=🎯:\
 
 [ ! -f ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ] && shortcuts >/dev/null 2>&1 &
 
-if pacman -Qs libxft-bgra >/dev/null 2>&1; then
-	# Start graphical server on user's current tty if not already running.
-	[ "$(tty)" = "/dev/tty1" ] && ! pidof -s Xorg >/dev/null 2>&1 && exec startx -- vt1 &> /dev/null
-else
-	echo "ERRRRRRRRRRROR!!! Please see .zprofile"
-fi
-
 # Switch escape and caps if tty and no passwd required:
 sudo -n loadkeys ${XDG_DATA_HOME:-$HOME/.local/share}/larbs/ttymaps.kmap 2>/dev/null
