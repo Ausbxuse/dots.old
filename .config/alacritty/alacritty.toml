@@ -1,0 +1,132 @@
+# [colors]
+# bright_foreground = "#ffffff"
+# dim_foreground = "#eaeaea"
+
+[colors.bright]
+black = "#444444"
+blue = "#61afef"
+cyan = "#67fff0"
+green = "#abe15b"
+magenta = "#fc1a70"
+red = "#ff2740"
+white = "#eaeaea"
+yellow = "#ffd242"
+
+[colors.cursor]
+cursor = "#eaeaea"
+text = "#000000"
+
+[colors.dim]
+black = "#000000"
+blue = "#506d8f"
+cyan = "#497e7a"
+
+green = "#7a8530"
+magenta = "#80638e"
+red = "#8c3336"
+white = "#eaeaea"
+yellow = "#97822e"
+
+[colors.normal]
+black = "#121212"
+blue = "#4fc1ff"
+cyan = "#62d8f1"
+green = "#9ece6a"
+magenta = "#fc317e"
+red = "#ff2740"
+white = "#eaeaea"
+yellow = "#f4bf75"
+
+[colors.primary]
+background = "#121212"
+foreground = "#eaeaea"
+
+[colors.selection]
+background = "#404040"
+text = "#eaeaea"
+
+[cursor.style]
+blinking = "Never"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 10
+
+[font.bold]
+family = "JetBrains Mono Nerd Font"
+# family = "Operator Mono Bold"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrains Mono Nerd Font"
+# family = "Operator Mono Bold"
+style = "Bold Italic"
+
+[font.italic]
+# family = "JetBrains Mono Nerd Font"
+family = "Operator Mono Book"
+style = "Italic"
+
+[font.normal]
+# family = "MesloLGS NF"
+# family = "Operator Mono Book"
+# family = "SFMono Nerd Font Mono"
+family = "JetBrains Mono Nerd Font"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "PasteSelection"
+key = "Insert"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "PageUp"
+mode = "~Alt"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "PageDown"
+mode = "~Alt"
+
+[scrolling]
+history = 10000
+multiplier = 1
+
+# [url.launcher]
+# program = "xdg-open"
+
+[window]
+dynamic_padding = true
+opacity = 0.78

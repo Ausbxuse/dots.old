@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd ~/.config/zsh && git pull origin master
+cd ~/.config/tmux && git pull origin master
+cd ~/.config/nvim && git pull origin master
+cd ~/.local/src/public-repos/snappy.nvim/ && git pull origin main
+cd ~/.local/src/public-repos/capture.nvim/ && git pull origin master

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+xmodmap -e "clear Lock; keycode 66 = Escape; keycode 119 = r"

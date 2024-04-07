@@ -68,6 +68,15 @@ cmd delete ${{
 	[ $ans = "y" ] && rm -rf -- $fx
 }}
 
+cmd trash ${{
+	clear; tput cup $(($(tput lines)/3)); tput bold
+	set -f
+	printf "%s\n\t" "$fx"
+	printf "trash?[y/N]"
+	read ans
+	[ $ans = "y" ] && trash-put $fx
+}}
+
 cmd moveto ${{
 	clear; tput cup $(($(tput lines)/3)); tput bold
 	set -f
@@ -99,6 +108,7 @@ map J $lf -remote "send $id cd $(sed -e 's/\s*#.*//' -e '/^$/d' -e 's/^\S*\s*//'
 map gh
 map g top
 map D delete
+map d trash
 map E extract
 map C copyto
 map M moveto
@@ -126,6 +136,3 @@ map V push :!nvim<space>
 map W $setsid -f $TERMINAL >/dev/null 2>&1
 
 map Y $printf "%s" "$fx" | xclip -selection clipboard
-
-# Source Bookmarks
-# source "~/.config/lf/shortcutrc"

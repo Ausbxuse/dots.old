@@ -3,44 +3,27 @@
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
+export GDK_DPI_SCALE=2
+
+#export PLASMA_USE_QT_SCALING=1
+#export QT_SCALE_FACTOR=1
+#
+#export QT_AUTO_SCREEN_SCALE_FACTOR=3
 
 xrdb -load ~/.config/x11/xresources &
-
-#randombg &
-#xwallpaper --zoom "/home/peter/.local/share/wallpapers/wallpaperflare.com_wallpaper.jpg" &			# set the background with the `setbg` script
-# This file runs when a DM logs you into a graphical session.
-# If you use startx/xinit like a Chad, this file will also be sourced.
-
-#mpd &			# music player daemon-you might prefer it as a service though
 xmodmap -e "keycode 108 = Multi_key" &
-xmodmap -e "keycode 119 = r" &
-#setbg
-#xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources &	# Uncomment to use Xresources colors/settings on startup
-#picom &		# xcompmgr for transparency
-#dunst &			# dunst for notifications
-xset r rate 200 60 &	# Speed xrate up
-unclutter &		# Remove mouse when idle
+# xmodmap -e "keycode 119 = r" &
+xset r rate 200 60 & # Speed xrate up
+unclutter &          # Remove mouse when idle
 #transmission-daemon &
-#fcitx &
-#light-locker --no-idle-hint &
-
-#xautolock -time 1 -locker "slock" -corners +00- &
 #pulseaudio &
-
-# This line autostarts an instance of Pulseaudio that does not exit on idle.
-# This is "necessary" on Artix due to a current bug between PA and
-# Chromium-based browsers where they fail to start PA and use dummy output.
-# ! pidof -s pulseaudio >/dev/null 2>&1 && setsid -f pulseaudio --start --exit-idle-time=-1 >/dev/null 2>&1 &
 killall pulseaudio && pulseaudio --start &
+# calcurse --daemon &
+# turn off the annoying middle click paste
+xinput set-button-map 13 1 1 3 &
+fcitx &
 
-#xset s 600 30 &
-#playerctld daemon &
-#mpDris2 &
-#xss-lock -n ~/.local/bin/scripts/dim-screen.sh -- xset s activate &
-#xidlehook --not-when-fullscreen --not-when-audio --timer 300 'xrandr --output "eDP-1" --brightness .7' 'xrandr --output "eDP-1" --brightness 1' --timer 60 'lock' 'xrandr --output "eDP-1" --brightness 1' &
+touchegg &
+syncthing -no-browser -home="/home/zhenyu/.config/syncthing" &
 
-calcurse --daemon &
-#conky &
-
-# turn of the annoying middle click paste
-xinput set-button-map 13 1 1 3
+xrandr_backlight & # workaround to change nvidia brightness

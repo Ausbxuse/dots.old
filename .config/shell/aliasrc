@@ -31,20 +31,20 @@ alias \
 	f="$FILE" \
 	e="$EDITOR" \
 	v="$EDITOR" \
-    R="R -q" \
+	R="R -q" \
 	p="sudo pacman" \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
-	z="zathura" \
+	\
 	tb="taskbook" \
-    kai="xdg-open"
+	kai="xdg-open" # z="zathura" \
 
 alias \
 	magit="nvim -c MagitOnly" \
 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
 	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
 	tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf" \
-    yarn="yarn --use-yarnrc $XDG_CONFIG_HOME/yarn/config" \
-    ra='ranger --choosedir=/tmp/rangerdir ; cd $(cat /tmp/rangerdir)' \
-alias 
+	yarn="yarn --use-yarnrc $XDG_CONFIG_HOME/yarn/config" \
+	ra='ranger --choosedir=/tmp/rangerdir ; cd $(cat /tmp/rangerdir)' \
+	lf="lfub"

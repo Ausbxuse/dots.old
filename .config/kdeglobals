@@ -135,14 +135,20 @@ ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=120,120,120
 
+[DialogIcons]
+Size=64
+
 [DirSelect Dialog]
-DirSelectDialog Size=829,580
+DirSelectDialog Size=846,586
+History Items[$e]=file:$HOME/Music
 
 [General]
-BrowserApplication=brave-browser.desktop
+BrowserApplication=firefox.desktop
 ColorScheme=WhiteSurDark
 ColorSchemeHash=79296561e8832ef612d7c1138272b1e03e6ba66d
 Name=Layan
+TerminalApplication=alacritty
+TerminalService=Alacritty.desktop
 XftHintStyle=hintslight
 XftSubPixel=rgb
 fixed=Hack,10,-1,5,50,0,0,0,0,0
@@ -157,7 +163,7 @@ widgetStyle=Breeze
 Theme=WhiteSur-dark
 
 [KDE]
-AnimationDurationFactor=0
+AnimationDurationFactor=0.7071067811865475
 ColorScheme=BreezeLight
 LookAndFeelPackage=com.github.vinceliuice.WhiteSur-dark
 contrast=0
@@ -166,7 +172,7 @@ widgetStyle=Lightly
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
-Breadcrumb Navigation=true
+Breadcrumb Navigation=false
 Decoration position=2
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
@@ -176,21 +182,34 @@ Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
 Show hidden files=false
-Sort by=Name
+Sort by=Date
 Sort directories first=true
-Sort reversed=false
+Sort hidden files last=false
+Sort reversed=true
 Speedbar Width=220
 View Style=DetailTree
 
 [KScreen]
-ScaleFactor=1.5
-ScreenScaleFactors=eDP-1=1.5;DP-1=1.5;DP-2=1.5;
+ScaleFactor=2.25
+ScreenScaleFactors=DP-0=2.25;DP-1=2.25;DP-2=2.25;DP-3=2.25;HDMI-0=2.25;DP-4=2.25;
 
 [KShortcutsDialog Settings]
 Dialog Size=600,480
 
+[MainToolbarIcons]
+Size=32
+
+[PanelIcons]
+Size=32
+
 [Shortcuts]
 FullScreen=
+
+[SmallIcons]
+Size=22
+
+[ToolbarIcons]
+Size=32
 
 [WM]
 activeBackground=51,51,51

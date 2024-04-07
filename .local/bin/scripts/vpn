@@ -1,0 +1,38 @@
+#!/bin/sh
+
+check=$(openvpn3 sessions-list | grep Status | awk '{print $4}')
+
+if [[  $check == connected ]]; then
+  status="on"
+elif [[ $check == reconnect  ]]; then
+  status="reconnect"
+else
+  status="off"
+
+fi
+
+
+case $1 in 
+  '') printf "vpn status: $status\n  -c to connect, -d to disconnect\n";;
+  -c)  if [[ $status == off ]]; then
+        echo choose your profile:
+        echo "   1) rift.ovpn"
+        echo "   2) lobster.ovpn"
+
+        until [[ $profile_choice =~ ^[1-3]$ ]]; do
+          read -rp"[1-2]: " -e -i 1 profile_choice
+        done
+
+
+        case $profile_choice in
+          1) profile="rift.ovpn";;
+          2) profile="lobster.ovpn";;
+        esac
+
+        openvpn3 session-start --config ~/.config/$profile || exit 1
+      else
+        echo already connected or connection unsuccessful && exit 1
+      fi
+    ;;
+  -d) openvpn3 session-manage --disconnect --config $(openvpn3 sessions-list | grep .config | awk '{print $3}');;
+esac

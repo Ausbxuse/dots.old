@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sudo sysctl dev.i915.perf_stream_paranoid=0
+sudo sysctl abi.vsyscall32=0

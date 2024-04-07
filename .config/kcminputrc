@@ -4,12 +4,16 @@ update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize,kcminp
 [Keyboard]
 KeyRepeat=repeat
 NumLock=2
-RepeatDelay=300
-RepeatRate=50
+RepeatDelay=202
+RepeatRate=100
 
 [Mouse]
+X11LibInputXAccelProfileFlat=true
+XLbInptAccelProfileFlat=true
+XLbInptLeftHanded=false
 XLbInptMiddleEmulation=false
-cursorSize=36
+XLbInptPointerAcceleration=0
+cursorSize=72
 cursorTheme=capitaine-cursors-light
 
 [Tmp]
