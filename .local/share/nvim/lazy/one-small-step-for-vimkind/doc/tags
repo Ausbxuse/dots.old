@@ -1,0 +1,13 @@
+lua-debug-vimspector	osv.txt	/*lua-debug-vimspector*
+one-small-step-for-vimkind	osv.txt	/*one-small-step-for-vimkind*
+osv	osv.txt	/*osv*
+osv-dap	osv.txt	/*osv-dap*
+osv-logging	osv.txt	/*osv-logging*
+osv-repl	osv.txt	/*osv-repl*
+osv-server	osv.txt	/*osv-server*
+osv.is_running()	osv.txt	/*osv.is_running()*
+osv.launch()	osv.txt	/*osv.launch()*
+osv.run_this()	osv.txt	/*osv.run_this()*
+osv.start_trace()	osv.txt	/*osv.start_trace()*
+osv.stop()	osv.txt	/*osv.stop()*
+osv.stop_trace()	osv.txt	/*osv.stop_trace()*

@@ -1,0 +1,7 @@
+nvim-treesitter-text-objects-move-submod	nvim-treesitter-textobjects.txt	/*nvim-treesitter-text-objects-move-submod*
+nvim-treesitter-text-objects-override	nvim-treesitter-textobjects.txt	/*nvim-treesitter-text-objects-override*
+nvim-treesitter-text-objects-select-submod	nvim-treesitter-textobjects.txt	/*nvim-treesitter-text-objects-select-submod*
+nvim-treesitter-text-objects-swap-submod	nvim-treesitter-textobjects.txt	/*nvim-treesitter-text-objects-swap-submod*
+nvim-treesitter-textobjects	nvim-treesitter-textobjects.txt	/*nvim-treesitter-textobjects*
+nvim-treesitter-textobjects-lsp_interop-submod	nvim-treesitter-textobjects.txt	/*nvim-treesitter-textobjects-lsp_interop-submod*
+nvim-treesitter-textobjects-modules	nvim-treesitter-textobjects.txt	/*nvim-treesitter-textobjects-modules*

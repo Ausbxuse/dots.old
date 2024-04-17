@@ -1,0 +1,13 @@
+Conform	conform.txt	/*Conform*
+conform	conform.txt	/*conform*
+conform-api	conform.txt	/*conform-api*
+conform-contents	conform.txt	/*conform-contents*
+conform-formatters	conform.txt	/*conform-formatters*
+conform-options	conform.txt	/*conform-options*
+conform.format	conform.txt	/*conform.format*
+conform.get_formatter_info	conform.txt	/*conform.get_formatter_info*
+conform.list_all_formatters	conform.txt	/*conform.list_all_formatters*
+conform.list_formatters	conform.txt	/*conform.list_formatters*
+conform.nvim	conform.txt	/*conform.nvim*
+conform.txt	conform.txt	/*conform.txt*
+conform.will_fallback_lsp	conform.txt	/*conform.will_fallback_lsp*
