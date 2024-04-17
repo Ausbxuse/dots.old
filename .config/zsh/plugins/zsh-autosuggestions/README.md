@@ -53,7 +53,7 @@ For more info, read the Character Highlighting section of the zsh manual: `man z
 `ZSH_AUTOSUGGEST_STRATEGY` is an array that specifies how suggestions should be generated. The strategies in the array are tried successively until a suggestion is found. There are currently three built-in strategies to choose from:
 
 - `history`: Chooses the most recent match from history.
-- `completion`: Chooses a suggestion based on what tab-completion would suggest. (requires `zpty` module)
+- `completion`: Chooses a suggestion based on what tab-completion would suggest. (requires `zpty` module, which is included with zsh since 4.0.1)
 - `match_prev_cmd`: Like `history`, but chooses the most recent match whose preceding history item matches the most recently executed command ([more info](src/strategies/match_prev_cmd.zsh)). Note that this strategy won't work as expected with ZSH options that don't preserve the history order such as `HIST_IGNORE_ALL_DUPS` or `HIST_EXPIRE_DUPS_FIRST`.
 
 For example, setting `ZSH_AUTOSUGGEST_STRATEGY=(history completion)` will first try to find a suggestion from your history, but, if it can't find a match, will find a suggestion from the completion engine.
@@ -79,9 +79,11 @@ Widgets that modify the buffer and are not found in any of these arrays will fet
 Set `ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE` to an integer value to disable autosuggestion for large buffers. The default is unset, which means that autosuggestion will be tried for any buffer size. Recommended value is 20.
 This can be useful when pasting large amount of text in the terminal, to avoid triggering autosuggestion for strings that are too long.
 
-### Enable Asynchronous Mode
+### Asynchronous Mode
 
-As of `v0.4.0`, suggestions can be fetched asynchronously. To enable this behavior, set the `ZSH_AUTOSUGGEST_USE_ASYNC` variable (it can be set to anything).
+Suggestions are fetched asynchronously by default in zsh versions 5.0.8 and greater. To disable asynchronous suggestions and fetch them synchronously instead, `unset ZSH_AUTOSUGGEST_USE_ASYNC` after sourcing the plugin.
+
+Alternatively, if you are using a version of zsh older than 5.0.8 and want to enable asynchronous mode, set the `ZSH_AUTOSUGGEST_USE_ASYNC` variable after sourcing the plugin (it can be set to anything). Note that there is [a bug](https://github.com/zsh-users/zsh-autosuggestions/issues/364#issuecomment-481423232) in versions of zsh older than 5.0.8 where <kbd>ctrl</kbd> + <kbd>c</kbd> will fail to reset the prompt immediately after fetching a suggestion asynchronously.
 
 ### Disabling automatic widget re-binding
 
@@ -89,13 +91,13 @@ Set `ZSH_AUTOSUGGEST_MANUAL_REBIND` (it can be set to anything) to disable autom
 
 ### Ignoring history suggestions that match a pattern
 
-Set `ZSH_AUTOSUGGEST_HISTORY_IGNORE` to a glob pattern to prevent offering suggestions for history entries that match the pattern. For example, set it to `"cd *"` to never suggest any `cd` commands from history. Or set to `"?(#c50,)"` to never suggest anything 50 characters or longer.
+Set `ZSH_AUTOSUGGEST_HISTORY_IGNORE` to a [glob pattern](http://zsh.sourceforge.net/Doc/Release/Expansion.html#Glob-Operators) to prevent offering suggestions for history entries that match the pattern. For example, set it to `"cd *"` to never suggest any `cd` commands from history. Or set to `"?(#c50,)"` to never suggest anything 50 characters or longer.
 
 **Note:** This only affects the `history` and `match_prev_cmd` suggestion strategies.
 
 ### Skipping completion suggestions for certain cases
 
-Set `ZSH_AUTOSUGGEST_COMPLETION_IGNORE` to a glob pattern to prevent offering completion suggestions when the buffer matches that pattern. For example, set it to `"git *"` to disable completion suggestions for git subcommands.
+Set `ZSH_AUTOSUGGEST_COMPLETION_IGNORE` to a [glob pattern](http://zsh.sourceforge.net/Doc/Release/Expansion.html#Glob-Operators) to prevent offering completion suggestions when the buffer matches that pattern. For example, set it to `"git *"` to disable completion suggestions for git subcommands.
 
 **Note:** This only affects the `completion` suggestion strategy.
 

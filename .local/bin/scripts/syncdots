@@ -9,7 +9,7 @@ configFiles=(plasma-org.kde.plasma.desktop-appletsrc Trolltech.conf breezerc kcm
 #spectaclerc
 
 # get rid of some wallpapers
-folders=(".config/gtk-2.0" ".config/gtk-3.0" ".config/gtk-4.0" ".local/share/kwin" ".local/share/plasma" ".local/share/fonts" ".local/share/icons" ".local/share/color-schemes" ".local/share/kservices5" ".local/share/wallpapers" ".config/nvim" ".config/alacritty" ".config/mpv" ".config/zathura" ".config/sxiv" ".config/lf" ".config/shell" ".config/wget" ".config/zsh" ".config/touchegg" ".config/kdedefaults" ".config/htop" ".config/paru" ".local/share/themes/Orchis-dark" ".config/x11" ".local/share/stardict" ".local/src/public-repos/matter" ".local/bin/scripts")
+folders=(".config/gtk-2.0" ".config/gtk-3.0" ".config/gtk-4.0" ".local/share/kwin" ".local/share/plasma" ".local/share/fonts" ".local/share/icons" ".local/share/color-schemes" ".local/share/kservices5" ".local/share/wallpapers" ".config/nvim" ".config/alacritty" ".config/mpv" ".config/zathura" ".config/sxiv" ".config/lf" ".config/shell" ".config/wget" ".config/tmux" ".config/zsh" ".config/touchegg" ".config/kdedefaults" ".config/htop" ".config/paru" ".local/share/themes/Orchis-dark" ".config/x11" ".local/share/stardict" ".local/src/public-repos/matter" ".local/share/zinit" ".local/bin/scripts")
 
 # extra files
 # /etc/NetworkManager/system-connections
