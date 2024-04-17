@@ -1,0 +1,9 @@
+nabla-configuration	nabla.txt	/*nabla-configuration*
+nabla-popup	nabla.txt	/*nabla-popup*
+nabla-quickstart	nabla.txt	/*nabla-quickstart*
+nabla-virtlines	nabla.txt	/*nabla-virtlines*
+nabla.disable_virt()	nabla.txt	/*nabla.disable_virt()*
+nabla.enable_virt()	nabla.txt	/*nabla.enable_virt()*
+nabla.is_virt_enabled()	nabla.txt	/*nabla.is_virt_enabled()*
+nabla.popup()	nabla.txt	/*nabla.popup()*
+nabla.txt	nabla.txt	/*nabla.txt*

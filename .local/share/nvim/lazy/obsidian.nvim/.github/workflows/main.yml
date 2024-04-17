@@ -1,0 +1,160 @@
+name: Main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+on:
+  pull_request:
+    branches:
+      - '*'
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  style:
+    name: Style
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Style
+        uses: JohnnyMorganz/stylua-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: 0.15.1
+          args: --check .
+  # test_windows:
+  #   name: Test (Windows)
+  #   runs-on: windows-latest
+  #   timeout-minutes: 20
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+  checks:
+    name: ${{ matrix.task.name }} (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 3
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        task:
+          - name: Test
+            run: |
+              make test PLENARY=_runtime/plenary.nvim
+
+          - name: Lint
+            prepare: |
+              sudo luarocks install luacheck
+            run: |
+              make lint
+
+        include:
+          - os: ubuntu-latest
+            nvim_url: https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.tar.gz
+            packages: luarocks ripgrep
+            manager: sudo apt-get
+
+          - os: windows-latest
+            nvim_url: https://github.com/neovim/neovim/releases/download/nightly/nvim-win64.zip
+            task:
+              name: Test
+              run: |
+                make test PLENARY=_runtime/plenary.nvim
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install packages
+        if: ${{ matrix.packages }}
+        run: ${{ matrix.manager }} install ${{ matrix.packages }}
+
+      - name: Install neovim (nix)
+        shell: bash
+        if: matrix.os != 'windows-latest'
+        run: |
+          # Download neovim nightly.
+          mkdir -p _neovim
+          curl -sL ${{ matrix.nvim_url }} | tar xzf - --strip-components=1 -C "${PWD}/_neovim"
+
+      - name: Install neovim (windows)
+        shell: powershell
+        if: matrix.os == 'windows-latest'
+        run: |
+          # Download neovim.
+          # winget install neovim
+          curl -o nvim-win64.zip ${{ matrix.nvim_url }}
+          Expand-Archive -F nvim-win64.zip .
+          Move-Item -Path nvim-win64 -Destination _neovim
+
+      - name: Install plugin dependencies
+        shell: bash
+        run: |
+          # Clone plenary.
+          mkdir -p _runtime
+          git clone --depth 1 https://github.com/nvim-lua/plenary.nvim _runtime/plenary.nvim
+
+      - name: Show environment
+        shell: bash
+        run: |
+          ls -lh _neovim
+          ls -lh _runtime
+
+      - name: Prepare
+        if: ${{ matrix.task.prepare }}
+        run: ${{ matrix.task.prepare }}
+
+      - name: ${{ matrix.task.name }}
+        shell: bash
+        run: |
+          export PATH="${PWD}/_neovim/bin:${PATH}"
+          export VIM="${PWD}/_neovim/share/nvim/runtime"
+
+          nvim --version
+
+          ${{ matrix.task.run }}
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    needs: [checks, style]
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install requirements
+        run: |
+          pip install packaging
+
+      - name: Prepare environment
+        run: |
+          echo "RELEASE_VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
+          echo "TAG=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
+      - name: Generate release notes
+        run: |
+          python scripts/release_notes.py > ${{ github.workspace }}-RELEASE_NOTES.md
+
+      - name: Publish GitHub release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          body_path: ${{ github.workspace }}-RELEASE_NOTES.md
+          prerelease: ${{ contains(env.TAG, 'rc') }}

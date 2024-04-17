@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/zhenyu/.local/src/public-repos/xuseiso/airootfs/root/dots/.git'
+let g:netrw_dirhist_6='/var/cache'
+let g:netrw_dirhist_5='/usr/share/archiso/configs/releng'
+let g:netrw_dirhist_4='/home/zhenyu/.local/share/ngrams'
+let g:netrw_dirhist_3='/home/zhenyu/.local/src/public-repos/capture.nvim/lua'
+let g:netrw_dirhist_2='/home/zhenyu/.local/src/public-repos/snappy.nvim/lua'
+let g:netrw_dirhist_1='/home/zhenyu/.local/src/public-repos/capture.nvim'
+let g:netrw_dirhist_0='/home/zhenyu/Documents/Notes/Fleeting'
+let g:netrw_dirhist_9='/home/zhenyu/.xpra'
+let g:netrw_dirhist_8='/home/zhenyu/.config'

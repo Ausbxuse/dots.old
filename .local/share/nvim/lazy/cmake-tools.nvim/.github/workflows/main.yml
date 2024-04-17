@@ -1,0 +1,37 @@
+name: Main
+on:
+  push:
+    paths-ignore:
+      - '**.md'
+      - '.gitignore'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+      - '.gitignore'
+jobs:
+  format:
+    name: Format
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v2
+
+      - name: Stylua
+        uses: JohnnyMorganz/stylua-action@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: latest # NOTE: we recommend pinning to a specific version in case of formatting changes
+          args: --check -f ./stylua.toml .
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare dependencies
+        run: |
+          mkdir -p _neovim
+          curl -sL https://github.com/neovim/neovim/releases/download/v0.9.0/nvim-linux64.tar.gz | tar xzf - --strip-components=1 -C "${PWD}/_neovim"
+      - name: Run tests
+        run: |
+          export PATH="${PWD}/_neovim/bin:${PATH}"
+          nvim --version
+          make test

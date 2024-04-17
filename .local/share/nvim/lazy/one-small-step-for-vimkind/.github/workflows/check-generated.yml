@@ -1,0 +1,24 @@
+name: Test that lua files are generated from ntangle file
+on: [push, pull_request]
+jobs:
+  Check-generated:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Setup neovim
+        uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
+          version: 'nightly'
+      - name: Prepare
+        run: |
+          mkdir -p ~/.local/share/nvim/site/pack/vendor/start
+          git clone --depth 1 https://github.com/jbyuki/ntangle.nvim ~/.local/share/nvim/site/pack/vendor/start/ntangle.nvim
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - name: Generate and diff
+        run: |
+          nvim --headless -c "lua require'ntangle'.tangle_all()" -c "exit"
+          git diff --exit-code -- lua

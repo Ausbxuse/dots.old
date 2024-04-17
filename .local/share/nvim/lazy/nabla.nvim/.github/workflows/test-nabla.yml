@@ -1,0 +1,35 @@
+name: Test nabla
+on: [push, pull_request]
+jobs:
+  Test-nabla:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        neovim_version: ['nightly', 'v0.7.2', 'v0.8.0']
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - run: date +%F > todays-date
+      - name: Restore cache for today's nightly
+        uses: actions/cache@v2
+        with:
+          path: _neovim
+          key: ${{ runner.os }}-x64-${{ hashFiles('todays-date') }}
+      - name: Setup neovim
+        uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
+          version: ${{ matrix.neovim_version }}
+      - name: Prepare
+        run: |
+          mkdir -p ~/.local/share/nvim/site/pack/vendor/start
+          git clone --depth 1 https://github.com/jbyuki/nabla.nvim ~/.local/share/nvim/site/pack/vendor/start/nabla.nvim
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - name: Run tests
+        run: |
+          cat test/test.lua
+          nvim --headless -c "luafile test/test.lua" -c "exit"
+          echo "Done"
+          cat result.txt

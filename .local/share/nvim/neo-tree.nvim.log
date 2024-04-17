@@ -1,0 +1,50 @@
+[INFO  Sun 03 Mar 2024 10:13:13 PM PST] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:220: Copied colorscheme.lua to clipboard
+[INFO  Sun 03 Mar 2024 10:13:25 PM PST] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:594: Renamed capture.lua successfully
+[INFO  Sun 03 Mar 2024 11:54:34 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Wed 06 Mar 2024 10:04:14 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Wed 06 Mar 2024 10:04:14 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Wed 06 Mar 2024 10:04:16 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Wed 06 Mar 2024 10:04:17 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Wed 06 Mar 2024 10:04:17 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Wed 06 Mar 2024 10:04:17 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Wed 06 Mar 2024 10:04:18 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Wed 06 Mar 2024 10:04:18 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Wed 06 Mar 2024 10:04:26 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Wed 06 Mar 2024 10:04:26 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Wed 06 Mar 2024 10:04:28 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Wed 06 Mar 2024 10:04:32 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Wed 06 Mar 2024 10:04:32 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Wed 06 Mar 2024 10:04:34 PM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:14:37 AM PST] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:594: Renamed lsp.lua successfully
+[INFO  Sat 09 Mar 2024 12:32:03 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:03 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:09 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:09 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:12 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:13 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:16 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:16 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:16 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:21 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:21 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:23 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:24 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:24 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:26 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:28 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:29 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:32 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:32 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:33 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:36 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:55 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sat 09 Mar 2024 12:32:55 AM PST] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Sun 24 Mar 2024 01:18:46 AM PDT] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:594: Renamed flash.lua successfully
+[INFO  Sun 31 Mar 2024 12:17:32 AM PDT] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:594: Renamed edgy.lua successfully
+[INFO  Sun 31 Mar 2024 10:07:10 PM PDT] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[ERROR Tue 02 Apr 2024 10:46:05 PM PDT] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:132: debounce  filesystem_navigate  error:  ...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/ui/renderer.lua:1036: Failed to rename buffer
+[ERROR Tue 02 Apr 2024 10:59:03 PM PDT] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:132: debounce  filesystem_navigate  error:  ...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/ui/renderer.lua:1036: Failed to rename buffer
+[ERROR Tue 02 Apr 2024 11:16:43 PM PDT] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:132: debounce  filesystem_navigate  error:  ...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/ui/renderer.lua:1036: Failed to rename buffer
+[ERROR Tue 02 Apr 2024 11:16:46 PM PDT] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:132: debounce  filesystem_navigate  error:  ...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/ui/renderer.lua:1036: Failed to rename buffer
+[ERROR Tue 02 Apr 2024 11:16:50 PM PDT] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:132: debounce  filesystem_navigate  error:  ...are/nvim/lazy/neo-tree.nvim/lua/neo-tree/ui/renderer.lua:1036: Failed to rename buffer
+[INFO  Thu 04 Apr 2024 11:58:25 PM PDT] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:594: Renamed oil.lua successfully
